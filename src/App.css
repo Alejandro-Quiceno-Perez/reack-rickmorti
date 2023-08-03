@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.characters {
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.characters h1 {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titulo {
+  font-family: fantasy, sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-home {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+}
+
+/*-------------------------*/
+
+.container-characters {
+  color: #fff;
+  width: 150vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.card {
+  margin-top: 2rem;
+  width: 90%;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+
+.card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.nombre-personaje h3 {
+  margin-top: 1rem;
+}
+
+.tipo-personaje {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-card {
+  margin: 1rem 4rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.home-end {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*-------------------------*/
+
+.card:hover {
+  border-radius: 30px;
+  transform: scale(1.05);
+  box-shadow: -1px 9px 10px rgba(255, 255, 255, 0.23);
+}
+
+.alive:hover {
+  color: #4fcc4f;
+  cursor: context-menu;
+}
+
+.dead:hover {
+  color: #ee3d3d;
+  cursor: context-menu;
+}
+
+/*------Responsive---------*/
+
+@media screen and (max-width: 1024px) {
+  
 }

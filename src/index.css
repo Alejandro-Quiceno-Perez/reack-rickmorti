@@ -1,13 +1,119 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 16.5px;
+}
+
+body {
+  background: #000000;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  /*margin: 3rem;*/
+}
+
+.app-header {
+  text-align: center;
+}
+
+.title {
+  color: #738f93;
+  font-size: 4rem;
+  font-family: fantasy, sans-serif;
+  margin: 2rem 0;
+}
+
+.img-home {
+  width: 45rem;
+  padding: 4rem;
+  margin: 10px auto;
+}
+
+.btn-search {
+  display: block;
+  margin: 0 auto;
+  background-color: #738f93;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(94, 95, 95, 0.5);
+  font-size: 1.8rem;
+  padding: 0 .5rem;
+  min-height: 2.7rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #ffffff;
+  border: 1px solid #738f93;
+  color: #738f93;
+  font-weight: bold;
+  transform: scale(1.0);
+}
+
+
+/*-----------Responsive--------------*/
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    max-width: 1024px;
+    max-height: 876px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  /*.img-titulo{
+    background-color: aqua;
+  }
+  */
+
+  .img-home {
+    width: 45rem;
+    padding: 4rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  body {
+    width: 767px;
+    display: flex;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .img-home {
+    width: 45rem;
+    padding: 4rem;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width:425px) {
+  body{
+    width: 425px;
+    display: flex;
+  }
+  .app {
+    width:100%;
+    margin: 5rem auto;
+  }
+  
 }
