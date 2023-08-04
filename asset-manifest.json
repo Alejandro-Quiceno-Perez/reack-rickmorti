@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/reack-rickmorti/static/css/main.582ddb92.css",
+    "main.css": "/reack-rickmorti/static/css/main.8cbc0bea.css",
     "main.js": "/reack-rickmorti/static/js/main.0d7e845e.js",
     "static/js/787.e75d53e9.chunk.js": "/reack-rickmorti/static/js/787.e75d53e9.chunk.js",
     "static/media/rick-morty.png": "/reack-rickmorti/static/media/rick-morty.ed9fa0be01b38da56af4.png",
     "index.html": "/reack-rickmorti/index.html",
-    "main.582ddb92.css.map": "/reack-rickmorti/static/css/main.582ddb92.css.map",
+    "main.8cbc0bea.css.map": "/reack-rickmorti/static/css/main.8cbc0bea.css.map",
     "main.0d7e845e.js.map": "/reack-rickmorti/static/js/main.0d7e845e.js.map",
     "787.e75d53e9.chunk.js.map": "/reack-rickmorti/static/js/787.e75d53e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.582ddb92.css",
+    "static/css/main.8cbc0bea.css",
     "static/js/main.0d7e845e.js"
   ]
 }
