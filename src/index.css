@@ -52,13 +52,10 @@ body {
 .btn-search:hover {
   background-color: #ffffff;
   border: 1px solid #738f93;
-  color: #738f93;
+  color: #000000;
   font-weight: bold;
   transform: scale(1.0);
 }
-
-
-/*-----------Responsive--------------*/
 
 @media screen and (max-width: 1024px) {
 
@@ -73,11 +70,6 @@ body {
   }
 
 
-  /*.img-titulo{
-    background-color: aqua;
-  }
-  */
-
   .img-home {
     width: 45rem;
     padding: 4rem;
@@ -85,11 +77,13 @@ body {
   }
 }
 
+/*--------Responsive---TABLET-----*/
+
 @media screen and (max-width: 767px) {
 
-  body {
-    width: 767px;
-    display: flex;
+
+  header {
+    width: 100%;
   }
 
   .title {
@@ -97,23 +91,70 @@ body {
     margin-bottom: 1.5rem;
   }
 
+  .app {
+    margin: 1rem auto;
+  }
 
   .img-home {
-    width: 45rem;
+    width: 100%;
     padding: 4rem;
     margin: 0 auto;
   }
 }
+/*--------Responsive---CELULAR-----*/
 
 
-@media screen and (max-width:425px) {
-  body{
-    width: 425px;
-    display: flex;
+@media screen and (max-width:412px) {
+  body {
+    width: 100%;
   }
+
   .app {
-    width:100%;
-    margin: 5rem auto;
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
   }
-  
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .img-home {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-search {
+    box-shadow: 0 4px 12px rgba(94, 95, 95, 0.5);
+    font-size: 1.6rem;
+  }
+}
+
+/*--------Responsive---CELULAR-----*/
+
+@media screen and (max-width:375px) {
+  body {
+    width: 100%;
+  }
+
+  .app {
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin:  0;
+  }
+
+  .img-home {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-search {
+    box-shadow: 0 4px 12px rgba(94, 95, 95, 0.5);
+    font-size: 1.4rem;
+  }
 }

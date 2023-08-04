@@ -19,17 +19,14 @@ export default function Characters(props) {
                     <div className="card" key={index}>
                         <img src={character.image} alt={character.name} />
                         <div className="nombre-personaje">
-                            <h3 >{character.name}</h3>
+                            <h3 >{character.name}: {character.species}</h3>
+                            <p className="text-grey">Episodios: {character.episode.length}</p>
                             <div className="tipo-personaje">
                                 {character.status === "Alive" ? (
                                     <p className="alive">Alive</p>
                                 ) : (
                                     <p className="dead">Dead</p>
                                 )}
-                            </div>
-                            <div className="info-card">
-                                <p className="text-grey">Episodios: {character.episode.length}</p>
-                                <p className="text-grey">Especie: {character.species}</p>
                             </div>
                         </div>
                     </div>
